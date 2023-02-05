@@ -22,10 +22,10 @@ class BottomNavBar extends StatelessWidget {
             label: 'About'),
         BottomNavigationBarItem(
             icon: Icon(
-              FontAwesomeIcons.userCircle,
+              FontAwesomeIcons.book,
               size: 20,
             ),
-            label: 'Profile')
+            label: 'Book')
       ],
       fixedColor: Colors.deepPurple[200],
       onTap: (int index) {
@@ -36,7 +36,7 @@ class BottomNavBar extends StatelessWidget {
             Navigator.pushNamed(context, '/about');
             break;
           case 2:
-            Navigator.pushNamed(context, '/profile');
+            Navigator.pushNamed(context, '/book');
             break;
         }
       },
