@@ -18,3 +18,18 @@ class Topic {
   factory Topic.fromJson(Map<String, dynamic> json) => _$TopicFromJson(json);
   Map<String, dynamic> toJson() => _$TopicToJson(this);
 }
+
+@JsonSerializable()
+class Chapter {
+  String chapter;
+  String text;
+
+  Chapter({
+    this.chapter = '',
+    this.text = '',
+  });
+
+  factory Chapter.fromJson(Map<String, dynamic> json) =>
+      _$ChapterFromJson(json);
+  Map<String, dynamic> toJson() => _$ChapterToJson(this);
+}

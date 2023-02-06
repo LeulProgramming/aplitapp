@@ -19,3 +19,13 @@ Map<String, dynamic> _$TopicToJson(Topic instance) => <String, dynamic>{
       'chapter': instance.chapter,
       'img': instance.img,
     };
+
+Chapter _$ChapterFromJson(Map<String, dynamic> json) => Chapter(
+      chapter: json['chapter'] as String? ?? '',
+      text: json['text'] as String? ?? '',
+    );
+
+Map<String, dynamic> _$ChapterToJson(Chapter instance) => <String, dynamic>{
+      'chapter': instance.chapter,
+      'text': instance.text,
+    };

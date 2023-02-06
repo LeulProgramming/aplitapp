@@ -14,4 +14,12 @@ class FirestoreService {
     var topics = data.map((d) => Topic.fromJson(d));
     return topics.toList();
   }
+
+  Future<List<Chapter>> getChapters() async {
+    var ref = _db.collection('chapters');
+    var snapshot = await ref.get();
+    var data = snapshot.docs.map((e) => e.data());
+    var chapters = data.map((e) => Chapter.fromJson(e));
+    return chapters.toList();
+  }
 }

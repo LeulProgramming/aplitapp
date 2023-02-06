@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:aplitapp/topics/topic_item.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:aplitapp/firestore.dart';
 import 'package:aplitapp/models.dart';
@@ -34,7 +35,7 @@ class TopicsScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               crossAxisSpacing: 10.0,
               crossAxisCount: 2,
-              children: topics.map((topic) => Text(topic.theme)).toList(),
+              children: topics.map((topic) => TopicItem(topic: topic)).toList(),
             ),
             bottomNavigationBar: const BottomNavBar(),
           );
