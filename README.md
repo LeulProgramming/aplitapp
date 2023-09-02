@@ -1,6 +1,7 @@
 # aplitapp
 
-A new Flutter project.
+Quite literally my first Flutter Project. 
+The code isn't all that great, but definitely proud of what I put together here within 2 weeks.
 
 ## Getting Started
 
